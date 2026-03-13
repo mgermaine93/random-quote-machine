@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 export default function QuoteComponent({ text, author, getQuoteAndAuthor, colorScheme }) {
 
-    // const [colorScheme] = useState(colorSchemes)
     const [newQuoteHovered, setNewQuoteHovered] = useState(false)
     const [tweetHovered, setTweetHovered] = useState(false)
 
