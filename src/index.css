@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+
+/* VCR OSD Mono - the camcorder bitmap font from the BCS opening titles */
+@font-face {
+  font-family: 'VCR OSD Mono';
+  src: url('https://www.dafont.com/forum/attach/orig/2/5/257637.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --ink-black: #001219ff;
+  --dark-teal: #005f73ff;
+  --vanilla-custard: #e9d8a6ff;
+  --golden-orange: #ee9b00ff;
+  --burnt-caramel: #ca6702ff;
+  --rusty-spice: #bb3e03ff;
+  --oxidized-iron: #ae2012ff;
+  --brown-red: #9b2226ff;
+
+  --font-script: 'Dancing Script', cursive;
+  --font-mono: 'VCR OSD Mono', 'Courier New', monospace;
+
+  font-family: var(--font-mono);
+  font-weight: 400;
+  line-height: 1.6;
+
+  background-color: var(--night-bordeaux);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color: #001219;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
